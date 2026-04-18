@@ -32,6 +32,10 @@ jobs:
         env:
           GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
         run: |
+          # Configure DVC to use service account auth
+          dvc remote modify storage gdrive_use_service_account true
+          dvc remote modify storage --local gdrive_service_account_credentials_data "$GDRIVE_CREDENTIALS_DATA"
+          
           dvc add data/raw/tfl_density_latest.json
           dvc push data/raw/tfl_density_latest.json.dvc
           
