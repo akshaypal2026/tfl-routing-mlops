@@ -1,13 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "tfl-iam",
-  "private_key_id": "6f7cd6b8c2955a695c199c563ce70f56d0a04983",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDCn/0t1j1IS9mu\nq9DnruHEffrOP/R2BbY5jyXckZiNfVTRq/wRQtDKYSreMq08DOcaFJ83/W7KYHFL\nTPHDmWi0ZZbNIjTX62/dSxVWyeAavAbBlDKWun0JjjvKMujRtdauNJ2bjUuC4V9S\nHjWWpOMhUzr64hNrmn1suR7jBlzHQLg8b7OcuRAx7TdGUCauBjyzbn8PPgUkiYgd\nfplmfAwpetWpM9P9QT4F2rXQm1Wd/1BrgiLCV+xKbJF+U+tWe6qOxP9YLwgib6Qr\n8jyu4Dgn51HfX4MxvcI27kFeTEE6ahWO6jjJ9rPRNPiGVa9zgaYyGPbPlgop31Lf\nYt+dtuQBAgMBAAECggEACAhpqcfTFHmJ3Ow+2ervMgNBVb/UHyMljFS+eXm1JAbA\n+GeSpqcQuPGohgPRVWOrnDIg6/v049gEL7zXqQQF4JWQKI3gteugXL5A4SnBjqx6\n05Ll69rQuna85x+8PUa15ewDP0yfJmlBsYglxtsftP+wtQDy+pVB9B1V574awvyC\nS51zG2qtMs+B2zvxCzZfWQ0KDtj5nHDVL6PwgNeqpRWPx5a2kW5lCoXMWo2/njid\neW+4/M6EqXDQ1aThP7RhfOxc3USieQP3CcaOwFnrharREsPGYz/UGPC1HBlIbFX2\n6QCm0c5Gc8h+sB1I4w8M17Nsw0R7SbKL1CMziya08wKBgQD0mKTTVRDOA7h5ECRu\nbPGcAbf0IlqFL1PBwdKH6G23hplUgg+zgN19czyjb0vCkvZy9Ok5ZlboRrwirRWR\n9wrqsAR8aLiPoLkdLpeQNaopi5siBKhHnUSIsR1KQJJfHvabY7s70jKapQc+hkWC\nIfq89/N1fUVTKdR5uww4jL/S5wKBgQDLsurNRQXDkTEsQxe6tfncB/lD4EWdjUMf\ngJ4lzvKniMQ92pOrCFuBWXl2Zg3kiEVFGfIXkr42V17DRIXcZAYF4Z2qrCV/duNA\nN5TJS5E1dTckqx7EQXqQbkY1+07LVwiFAh0iLoc2057F96HV3mbM06KNEgfUlGib\n8whd8Cic1wKBgC192mIH1zlJzdyOWQhEsOcgFrOMVCOjOsO1pc9rNkTE/u2NxxfO\npuM3NJb9Ey0cIkQdMudfFljbFxCn+nQMa3ZcyGjPHUxxSxyXVs8WfBCAC5lXHmk7\nYcy+jEEMI20XmCwsb11f6dODUAab+H+MjFLrFtfKNcOS6xa86Df4TZEPAoGAbPGd\nCPoQch82SHD9wPtQzfBpzXamZPRHYRLeAmSjfRz1sAs2DTRkFFMxVjSQ25hSS/nr\nc9Yk61VhNlhwq4XHft/C/qQhTgHc2tyfM+W5nPi67F6lDtviXFrOLFLjOneq89BE\nmqJ96MHX2hNuN79CBexutLpe+8AADuA1qmAmqHMCgYBplNTd1uo20/xlBAsYyZb0\nzU0vEmPK1P9juJPJkYZgecp9cPPQvbEJAGl5uiTwuWW4ObtMS32jUX604g2gSwa+\n2WHrI/nACv2fF8Y5+01t78oqu0bzA/aqdDp68amu0yayu0+9wDqvE2aExgGa5Fs/\nkS7Ut8Qf6U1G4hXbdERUqw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "tfl-dvc-harvester@tfl-iam.iam.gserviceaccount.com",
-  "client_id": "109261944208113116435",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tfl-dvc-harvester%40tfl-iam.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
-}
+
