@@ -2,6 +2,14 @@ import streamlit as st
 import networkx as nx
 import json
 import os
+import sys
+
+# Add src to path so we can import data_harvest
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+try:
+    from src.data_harvest import harvest_real_tfl_data
+except ImportError:
+    pass
 
 # Streamlit App Configuration
 st.set_page_config(page_title="TfL Comfort-Adjusted Routing", layout="wide")
@@ -13,8 +21,12 @@ st.markdown("A serverless MLOps pipeline using GNNs to provide comfort-adjusted 
 def load_graph_data():
     data_path = "data/raw/tfl_density_latest.json"
     if not os.path.exists(data_path):
-        st.warning("No data found. Please run the data harvester first.")
-        return None
+        st.info("Data not found. Harvesting latest TfL data on the fly...")
+        try:
+            harvest_real_tfl_data()
+        except Exception as e:
+            st.error(f"Failed to fetch data: {e}")
+            return None
     
     with open(data_path, "r") as f:
         data = json.load(f)
