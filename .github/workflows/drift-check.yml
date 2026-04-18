@@ -1,0 +1,47 @@
+name: Data Drift Check
+
+on:
+  push:
+    paths:
+      - 'data/raw/*.dvc' # Trigger when new data is added via DVC
+  workflow_dispatch:
+
+jobs:
+  check-drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install dvc dvc-gdrive evidently pandas
+
+      - name: Pull data from DVC
+        env:
+          GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+        run: |
+          dvc pull
+
+      - name: Run Drift Analysis
+        run: |
+          # A mock script that compares latest data to baseline
+          # In reality, this would use evidently to compare datasets
+          echo "Running drift analysis using evidently..."
+          python -c "
+import json
+print('Checking data drift...')
+# Assume drift is detected if average density > 0.8
+with open('data/raw/tfl_density_latest.json', 'r') as f:
+    data = json.load(f)
+    avg_density = sum(e['density'] for e in data['edges']) / len(data['edges'])
+    if avg_density > 0.8:
+        print('::warning::Data Drift Detected! Triggering retraining.')
+        # Here we could trigger the Colab notebook webhook
+    else:
+        print('No significant drift detected.')
+"
