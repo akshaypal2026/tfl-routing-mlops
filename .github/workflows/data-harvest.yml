@@ -1,8 +1,6 @@
 name: TfL Data Harvest
 
 on:
-  schedule:
-    - cron: '*/15 * * * *' # Every 15 minutes
   workflow_dispatch: # Allow manual trigger
 
 jobs:
